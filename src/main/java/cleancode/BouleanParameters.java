@@ -22,6 +22,7 @@ public class BouleanParameters {
 		pre();
 		post();
 	}
+
 	static void bigUglyMethod323(int a, int b) {
 		pre();
 		System.out.println("This too for US323");
@@ -40,7 +41,8 @@ public class BouleanParameters {
 		System.out.println("Complex Logic");
 	}
 
-	// ============== "BOSS" LEVEL: Deeply nested. A lot harder to break down =================
+	// ============== "BOSS" LEVEL: Deeply nested. A lot harder to break down
+	// =================
 
 	static int bossLevelStuffFluff323(List<Integer> tasks) {
 		int i = 0;
@@ -60,6 +62,7 @@ public class BouleanParameters {
 		System.out.println("Logic6 " + j++);
 		return i;
 	}
+
 	static int bossLevelStuffFluff(List<Integer> tasks) {
 		int i = 0;
 		int j = 1;
@@ -77,6 +80,7 @@ public class BouleanParameters {
 		System.out.println("Logic6 " + j++);
 		return i;
 	}
+
 	static int bossLevelStuffNoFluff(List<Integer> tasks) {
 		int i = 0;
 		int j = 1;
@@ -85,6 +89,7 @@ public class BouleanParameters {
 		System.out.println("Logic7");
 		return i;
 	}
+
 	static int bossLevelNoStuff(boolean fluff, List<Integer> tasks) {
 		int i = 0;
 		int j = 1;
