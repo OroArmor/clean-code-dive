@@ -1,10 +1,6 @@
 package videostore.horror;
 
 public class Movie {
-	public static enum MovieType {
-		CHILDRENS, REGULAR, NEW_RELEASE;
-	}
-
 	private String title;
 	private MovieType type;
 
