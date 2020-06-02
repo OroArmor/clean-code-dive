@@ -9,17 +9,13 @@ public class StatementFormatter {
 	}
 
 	private String formatBody(List<Rental> rentals) {
-		return rentals.stream().map(this::formatBodyLine).collect(joining());
+		return rentals.stream().map(Rental::formatBodyLine).collect(joining());
 	}
 
 	private String formatFooter(List<Rental> rentals) {
 		return "Amount owed is " + rentals.stream().mapToDouble(Rental::calculateRentalPrice).sum() + "\n"
 				+ "You earned " + rentals.stream().mapToInt(Rental::addFrequentRenterPoints).sum()
 				+ " frequent renter points";
-	}
-
-	private String formatBodyLine(Rental rental) {
-		return "\t" + rental.getMovie().getTitle() + "\t" + rental.calculateRentalPrice() + "\n";
 	}
 
 	private String formatHeader(String name) {

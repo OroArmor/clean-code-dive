@@ -33,4 +33,8 @@ public class Rental {
 		return movie.getType().calculatePrice(daysRented);
 	}
 
+	public String formatBodyLine() {
+		return "\t" + getMovie().getTitle() + "\t" + calculateRentalPrice() + "\n";
+	}
+
 }
